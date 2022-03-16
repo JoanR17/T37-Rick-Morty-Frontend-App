@@ -5,15 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AboutComponent } from './about/about.component';
-import { PersonajesComponent } from './personajes/personajes.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PersonajeCardComponent } from './personajes/personaje-card/personaje-card.component';
+import { PersonajesListComponent } from './personajes/personajes-list/personajes-list.component';
+import { PersonajesDetailComponent } from './personajes/personajes-detail/personajes-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     AboutComponent,
-    PersonajesComponent
+    PersonajeCardComponent,
+    PersonajesListComponent,
+    PersonajesDetailComponent
   ],
   imports: [
     BrowserModule,
