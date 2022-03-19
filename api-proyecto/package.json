@@ -1,12 +1,15 @@
 {
-  "name": "proyecto-rick-morty",
+  "name": "api-proyecto",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "server": "json-server --watch ./server/database.json"
   },
   "private": true,
   "dependencies": {
@@ -18,6 +21,7 @@
     "@angular/platform-browser": "~13.2.0",
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
+    "faker": "^6.6.6",
     "json-server": "^0.17.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
@@ -27,7 +31,6 @@
     "@angular-devkit/build-angular": "~13.2.6",
     "@angular/cli": "~13.2.6",
     "@angular/compiler-cli": "~13.2.0",
-    "@faker-js/faker": "^6.0.0",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "jasmine-core": "~4.0.0",
